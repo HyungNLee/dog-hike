@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DogHike</title>
+  </head>
+  <body>
+    <p>DogHike</p>
+    <form id="breedPick">
+      <select class="form-control" id="dogBreed">
+      </select>
+      <button type="submit">Pick</button>
+    </form>
+    <div id="dogUrl">
+      <img id="dogPicture" src="">
+    </div>
+    <form id="petNameForm">
+      <label for="petName">Name your dog</label>
+      <input type="text" name="petName" id="petName">
+      <button type="submit">Start the game!</button>
+    </form>
+    <div id="letTheGameBegin">
+    <h1 id="yourPetName"></h1>
+    <h1 id="status"></h1>
+    <h3>Energy</h3>
+    <div class="progress">
+        <div id="healthbar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
+        aria-valuemin="0" aria-valuemax="100" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <h3>Thirst</h3>
+    <div class="progress">
+        <div id="thirstbar" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100"
+        aria-valuemin="0" aria-valuemax="0" style="width:0%">
+        </div>
+    </div>
+    <br>
+    <h3>Hunger</h3>
+    <div class="progress">
+        <div id="hungerbar" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100"
+        aria-valuemin="0" aria-valuemax="0" style="width:0%">
+        </div>
+    </div>
+    <button type="button" id="feedDog">Feed</button>
+    <button type="button" id="giveDrink">Give drink</button>
+    <button type="button" id="restDog">Rest</button>
+
+  </div>
+  </body>
+</html>
